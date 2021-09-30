@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"week3\startup_stm32l053xx.o"
+"week3\main.o"
+"week3\gpio.o"
+"week3\tim.o"
+"week3\stm32l0xx_it.o"
+"week3\stm32l0xx_hal_msp.o"
+"week3\stm32l0xx_hal_tim.o"
+"week3\stm32l0xx_hal_tim_ex.o"
+"week3\stm32l0xx_hal.o"
+"week3\stm32l0xx_hal_i2c.o"
+"week3\stm32l0xx_hal_i2c_ex.o"
+"week3\stm32l0xx_hal_rcc.o"
+"week3\stm32l0xx_hal_rcc_ex.o"
+"week3\stm32l0xx_hal_flash_ramfunc.o"
+"week3\stm32l0xx_hal_flash.o"
+"week3\stm32l0xx_hal_flash_ex.o"
+"week3\stm32l0xx_hal_gpio.o"
+"week3\stm32l0xx_hal_dma.o"
+"week3\stm32l0xx_hal_pwr.o"
+"week3\stm32l0xx_hal_pwr_ex.o"
+"week3\stm32l0xx_hal_cortex.o"
+"week3\stm32l0xx_hal_exti.o"
+"week3\system_stm32l0xx.o"
+--library_type=microlib --strict --scatter "week3\week3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "week3.map" -o week3\week3.axf
